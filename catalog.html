@@ -6,18 +6,20 @@
   </head>
   <body>
     <header class="main-header">
-	    <h1 class="visually-hidden">Device</h1>
-	    <nav class="main-nav">
+        <nav class="main-nav">
             <span class="name-site">DEVICE</span>
-    	    <span>form of search</span>
-    	    <ul>
+            <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </form>
+            <ul>
                 <li><a href="https://htmlacademy.ru/profile/id794007">Валентин Петухов</a></li>
                 <li><a href="#">Выйти</a></li>   
                 <li><a href="#">Сравнить</a></li>   
                 <li><a href="#">Корзина</a></li>   
             </ul>
-            <h3>Каталог товаров</h3>
-    	    <ul class="catalog-list">
+            <h2>Каталог товаров</h2>
+            <ul class="catalog-list">
                 <li class="catalog-item column-1"><a href="#">Виртуальная реальность</a></li>
                 <li class="catalog-item column-1"><a href="#">Моноподы для селфи</a></li>
                 <li class="catalog-item column-1"><a href="#">Экшн-камеры</a></li>
@@ -25,17 +27,17 @@
                 <li class="catalog-item column-2"><a href="#">Умные часы</a></li>
                 <li class="catalog-item column-3"><a href="#">Квадрокоптеры</a></li>
             </ul>
-    	    <ul class="service-and-info">
-    		    <li><a href="#"><h3>Доставка</h3></a></li>
-    		    <li><a href="#"><h3>Гарантии</h3></a></li>
-    		    <li><a href="#"><h3>Контакты</h3></a></li>
-    		</ul> 
-        </nav>	
+            <ul class="service-and-info">
+                <li><a href="#"><h2>Доставка</h2></a></li>
+                <li><a href="#"><h2>Гарантии</h2></a></li>
+                <li><a href="#"><h2>Контакты</h2></a></li>
+            </ul> 
+        </nav>  
     </header>
 
     <main>
-    	<nav class="catalog-nav">
-    		<h2>Моноподы для селфи</h2>
+        <nav class="catalog-nav">
+            <h1>Моноподы для селфи</h1>
             <ul class="catalog-nav-list">
                 <li><a href="index.html">Главная</a></li>      
                 <li>&gt; </li>      
@@ -43,10 +45,71 @@
                 <li>&gt; </li>      
                 <li><a href="#">Моноподы для селфи</a></li>      
             </ul>
-    	</nav>
+        </nav>
         <section class="filter">
-            <h3>Фильтр</h3>
-            <!--форма фильтра-->
+            <h2>Фильтр</h2>
+            <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
+                <div class="cost">
+                    <h3>Стоимость</h3>
+                    <div class="range-cost">
+                        <div class="slider slider-1"></div>
+                        <div class="slider slider-2"></div>
+                    </div>
+                </div>
+                <div class="colour">
+                    <h3>Цвет</h3>
+                    <ul class="colour-list">
+                        <li>
+                            <label>
+                                <input type="checkbox" name="colour-black" checked>
+                                Черный
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="colour-white">
+                                Белый
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="colour-blue" checked>
+                                Синий
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="colour-red" checked>
+                                Красный
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="colour-pink">
+                                Розовый
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bluetooth">
+                    <h3>Bluetooth</h3>
+                    <ul class="bluetooth-list">
+                        <li>
+                            <label>
+                                <input type="radio" name="Bluetooth" checked>
+                                Есть
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="Bluetooth">
+                                Нет
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <button type="submut" name="show">Показать</button>
+            </form>
         </section>
         <section class="sort">
             <h3>Сортировка</h3>
@@ -97,20 +160,20 @@
     <footer>
             <span class="name-site">DEVICE</span>
         <span class="footer-adress">
-    		г.Москва, ул. Строителей 15
-    	</span>
-    	<nav class="footer-nav">
+            г.Москва, ул. Строителей 15
+        </span>
+        <nav class="footer-nav">
             <a href="#">Валентин Петухов</a>
             <a href="#">Выйти</a>
-		    <a href="#">Сравнить</a>
-		    <a href="#">Корзина</a>
-		</nav>
-		<ul class="service-and-info">
-		    <li><a href="#">Доставка</a></li>
-		    <li><a href="#">Гарантии</a></li>
-		    <li><a href="#">Контакты</a></li>
-		</ul> 	
-		<span class="cellphone">Тел.: +7 (495) 495-95-95</span>
+            <a href="#">Сравнить</a>
+            <a href="#">Корзина</a>
+        </nav>
+        <ul class="service-and-info">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>   
+        <span class="cellphone">Тел.: +7 (495) 495-95-95</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </footer>
 
