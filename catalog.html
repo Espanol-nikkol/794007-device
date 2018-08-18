@@ -18,7 +18,7 @@
                 <li><a href="#">Сравнить</a></li>   
                 <li><a href="#">Корзина</a></li>   
             </ul>
-            <h2>Каталог товаров</h2>
+            <a href="#"><h2>Каталог товаров</h2></a>
             <ul class="catalog-list">
                 <li class="catalog-item column-1"><a href="#">Виртуальная реальность</a></li>
                 <li class="catalog-item column-1"><a href="#">Моноподы для селфи</a></li>
@@ -27,7 +27,7 @@
                 <li class="catalog-item column-2"><a href="#">Умные часы</a></li>
                 <li class="catalog-item column-3"><a href="#">Квадрокоптеры</a></li>
             </ul>
-            <ul class="service-and-info">
+            <ul class="service-and-info" aria-label="Услуги и информация">
                 <li><a href="#"><h2>Доставка</h2></a></li>
                 <li><a href="#"><h2>Гарантии</h2></a></li>
                 <li><a href="#"><h2>Контакты</h2></a></li>
@@ -38,11 +38,9 @@
     <main>
         <nav class="catalog-nav">
             <h1>Моноподы для селфи</h1>
-            <ul class="catalog-nav-list">
+            <ul class="catalog-nav-list" aria-lable="Путь к текущему каталогу">
                 <li><a href="index.html">Главная</a></li>      
-                <li>&gt; </li>      
                 <li><a href="#">Каталог товаров</a></li>      
-                <li>&gt; </li>      
                 <li><a href="#">Моноподы для селфи</a></li>      
             </ul>
         </nav>
@@ -58,7 +56,7 @@
                 </div>
                 <div class="colour">
                     <h3>Цвет</h3>
-                    <ul class="colour-list">
+                    <ul class="colour-list" aria-label="Доступные цвета">
                         <li>
                             <label>
                                 <input type="checkbox" name="colour-black" checked>
@@ -93,7 +91,7 @@
                 </div>
                 <div class="bluetooth">
                     <h3>Bluetooth</h3>
-                    <ul class="bluetooth-list">
+                    <ul class="bluetooth-list" aria-label="Опция Bluetooth">
                         <li>
                             <label>
                                 <input type="radio" name="Bluetooth" checked>
@@ -119,29 +117,53 @@
                 <li><a href="#">По популярности</a></li>
             </ul>
             <ul class="sort-nav">
-                <li><a class="sort-nav-top" href="#">&#9650;</a></li>
-                <li><a class="sort-nav-bottom" href="#">&#9660;</a></li>
+                <li><a class="sort-nav sort-nav-top" href="#">Page up</a></li>
+                <li><a class="sort-nav sort-nav-bottom" href="#">Page down</a></li>
             </ul>
         </section>
         <section class="item">
             <div class="item-1">
-                <img src="img/catalog/item-1.jpg" width="360px" height="380px" alt="Любительская селфи-палка">
-                <h3>Любительская селфи-палка</h3>
+                <div class="item-jpg" tabindex="0" aria-label="Карточка товара Любительская селфи-палка">
+                    <img src="img/catalog/item-1.jpg" width="360px" height="380px" alt="Любительская селфи-палка">
+                    <ul aria-label="Действия с товаром">
+                        <li><a href="#">В корзину</a></li>
+                        <li><a href="#">Добавить к сравнению</a></li>
+                    </ul>
+                </div>
+                <a href="#"><h3>Любительская селфи-палка</h3></a>
                 <span>500 руб</span>
             </div>
             <div class="item-2">
-                <img src="img/catalog/item-2.jpg" width="360px" height="380px" alt="Профессиональная селфи-палка">
-                <h3>Профессиональная селфи-палка</h3>
+                <div class="item-jpg" tabindex="0" aria-label="Карточка товара Профессиональная селфи-палка">
+                    <img src="img/catalog/item-2.jpg" width="360px" height="380px" alt="Профессиональная селфи-палка">
+                    <ul aria-label="Действия с товаром">
+                        <li><a href="#">В корзину</a></li>
+                        <li><a href="#">Добавить к сравнению</a></li>
+                    </ul>
+                </div>
+                <a href="#"><h3>Профессиональная селфи-палка</h3></a>
                 <span>1 500 руб</span>
             </div>
             <div class="item-3">
-                <img src="img/catalog/item-3.jpg" width="360px" height="380px" alt="Непотопляемая селфи-палка">
-                <h3>Непотопляемая селфи-палка</h3>
+                <div class="item-jpg" tabindex="0" aria-label="Карточка товара Непотопляемая селфи-палка">
+                    <img src="img/catalog/item-3.jpg" width="360px" height="380px" alt="Непотопляемая селфи-палка">
+                    <ul aria-label="Действия с товаром">
+                        <li><a href="#">В корзину</a></li>
+                        <li><a href="#">Добавить к сравнению</a></li>
+                    </ul>
+                </div>
+                <a href="#"><h3>Непотопляемая селфи-палка</h3></a>
                 <span>2 500 руб</span>
             </div>
             <div class="item-4">
-                <img src="img/catalog/item-4.jpg" width="360px" height="380px" alt="Селфи-палка &quot;Следуй за мной&quot;">
-                <h3>Селфи-палка &quot; Следуй за мной&quot; </h3>
+                <div class="item-jpg" tabindex="0" aria-label="Карточка товара Селфи-палка &quot;Следуй за мной&quot;">
+                    <img src="img/catalog/item-4.jpg" width="360px" height="380px" alt="Селфи-палка &quot;Следуй за мной&quot;">
+                    <ul aria-label="Действия с товаром">
+                        <li><a href="#">В корзину</a></li>
+                        <li><a href="#">Добавить к сравнению</a></li>
+                    </ul>
+                </div>
+                <a href="#"><h3>Селфи-палка &quot; Следуй за мной&quot; </h3></a>
                 <span>4 900 руб</span>
             </div>
         </section>
