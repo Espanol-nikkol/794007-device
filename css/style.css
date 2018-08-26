@@ -1,11 +1,20 @@
 @font-face {
 	font-family: "Gilroy Light";
-	src: url("fonts/gilroylight.woff2") format("woff2");
-	src: url("fonts/gilroylight.woff") format("woff");	
-	font-family: "Gilroy ExtraBold";
-	src: url("fonts/gilroyextrabold.woff2") format("woff2");
-	src: url("fonts/gilroyextrabold.woff") format("woff");
+	src: url("fonts/gilroylight.woff2") format("woff2"), 
+		 url("fonts/gilroylight.woff") format("woff");
+	font-style: normal;	
+	font-weight: 300;
 }
+
+@font-face {
+	font-family: "Gilroy ExtraBold";
+	src: url("fonts/gilroyextrabold.woff2") format("woff2"), 
+		 url("fonts/gilroyextrabold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;	 
+}
+
+		/*Общие правила*/
 
 body {
 	padding: 0;
@@ -14,6 +23,7 @@ body {
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
+	font-weight: 300;
 	color: #000000;
 }
 
@@ -24,6 +34,15 @@ a {
 
 .font-gilroy {
 	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.font-gilroy-a {
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 4px;
 }
 
 .default-list {
@@ -32,6 +51,23 @@ a {
 	padding: 0;
 	margin: 0;
 }
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+
+.visually-hidden {
+	visibility: hidden;
+}
+
+.button {
+	background-color: transparent;
+
+	border: none;
+}
+		
+		/*Шапка*/
 
 .main-header {
 	background-color: rgb(247, 226, 150);
@@ -50,13 +86,217 @@ input[type="search"] {
 	background-color: inherit;
 }
 
-.main-nav h2 {
-	font-size: 18px;
-	line-height: 24px;
-	text-transform: uppercase;
+.button-search {
+	width: 85px;
+	height: 49px;
+	
+	vertical-align: center;
+	text-align: center;
 }
+
+		/*Анимация шапки*/
+
+.name-site:hover,
+input[type="search"]:hover,
+.primary-link li:hover,
+.catalog-list li:hover,
+.catalog-title:hover,
+.service-and-info li:hover,
+.social-list li:hover {
+	opacity: 0.6;
+}
+
+input[type="search"]:active,
+input[type="search"]:focus {
+	border-bottom: 2px solid black;
+	opacity: 1.0;
+}
+
+input[type="search"]:focus {
+	border-bottom: 2px solid black;
+}
+
+input[type="search"]:focus+.button {
+	visibility: visible;
+	border:2px solid black;
+
+}
+
+.button-search:hover{
+	background-color: #000000;
+	color: white;
+	visibility: visible;
+}
+
+.button-search:active{
+	color: #6a6a6a;
+}
+
+.name-site:active,
+.primary-link li:active,
+.catalog-list li:active,
+.catalog-title:active,
+.service-and-info li:active,
+.social-list li:active {
+	opacity: 0.3;
+}
+
+		/*основная часть*/
 
 .products span {
 	font-size: 47px;
 	line-height: 56px;
+}
+
+.options {
+	font-size: 13px;
+	line-height: 20px;
+	color: #464646;
+}
+
+.options-value {
+	font-family: "Gilroy Light", "Arial", sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.popular-list div {
+	width: 160px;
+	height: 160px;
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.service {
+	background-color: #e5e5e5;
+}
+
+.service h2 {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.service p {
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: #464646;
+}
+
+
+.black-white-img {
+	opacity: 0.2;
+}
+
+.color-img {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.info h2,
+.contacts h2 {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.delivery-company {
+	font-size: 16px;
+	line-height: 40px;
+}
+
+		/*Анимация основной части*/
+.popular-list div:hover {
+	background-color: rgba(240, 197, 46, 1.0);
+}		
+
+.popular-list a:active {
+	opacity: 0.3;
+}	
+
+.color-img:hover {
+	opacity: 1;
+}
+
+.black-white-img:hover {
+	opacity: 0;
+}
+
+
+
+		/*Подвал*/
+
+footer {
+	background-color: #464646;
+	color: white;
+}
+
+footer .site-name {
+	color: #ffc600;
+	font-size: 48px;
+}
+
+.footer-nav a {
+	color: white;
+}
+
+.social-list {
+	opacity: 0.3
+}
+
+		/*Всплывающие окна*/
+
+.modal-write-us input {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.modal-write-us input:hover {
+	background-color: #eaeaea;
+}		
+
+.modal-write-us input:focus {
+	border: 3px solid #f0c52e;
+}
+
+.modal-write-us input:invalid {
+	background-color: #f6dada;
+}
+
+button[name="close"] {
+	opacity: 0.5;
+}
+
+button[name="close"]:hover {
+	opacity: 1;
+}
+
+button[name="close"]:active {
+	opacity: 0.3;
+}
+
+.modal-map div {
+	position: relative;
+	width: 960px;
+	height: 559px;
+}
+
+.modal-map button {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+}
+
+		/*Страница каталога*/
+		/*Основное содержание*/
+
+.catalog-nav-list li {
+	opacity: 0.3;
+}
+
+.filter h2 {
+	display: block;
+	width: 1534px;
+	height: 70px;
+	background-image: linear-gradient (to right, )
 }

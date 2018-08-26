@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,17 +13,17 @@
             <a class="main-page" href="index.html">DEVICE</a>
             <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти" aria-label="Найти"></button>                
+                <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                <button class="button button-search visually-hidden" type="submit">Найти</button>
             </form>
-            <ul>
+            <ul class="default-list">
                 <li><a href="https://htmlacademy.ru/profile/id794007">Валентин Петухов</a></li>
                 <li><a href="#">Выйти</a></li>   
                 <li><a href="#">Сравнить</a></li>   
                 <li><a href="#">Корзина</a></li>   
             </ul>
             <a href="#"><h2>Каталог товаров</h2></a>
-            <ul class="catalog-list">
+            <ul class="catalog-list default-list">
                 <li class="catalog-item column-1"><a href="#">Виртуальная реальность</a></li>
                 <li class="catalog-item column-1"><a href="#">Моноподы для селфи</a></li>
                 <li class="catalog-item column-1"><a href="#">Экшн-камеры</a></li>
@@ -28,7 +31,7 @@
                 <li class="catalog-item column-2"><a href="#">Умные часы</a></li>
                 <li class="catalog-item column-3"><a href="#">Квадрокоптеры</a></li>
             </ul>
-            <ul class="service-and-info" aria-label="Услуги и информация">
+            <ul class="service-and-info default-list" aria-label="Услуги и информация">
                 <li><a href="#"><h2>Доставка</h2></a></li>
                 <li><a href="#"><h2>Гарантии</h2></a></li>
                 <li><a href="#"><h2>Контакты</h2></a></li>
@@ -39,14 +42,26 @@
     <main>
         <nav class="catalog-nav">
             <h1>Моноподы для селфи</h1>
-            <ul class="catalog-nav-list" aria-label="Путь к текущему каталогу">
+            <ul class="catalog-nav-list default-list" aria-label="Путь к текущему каталогу">
                 <li><a href="index.html">Главная</a></li>      
                 <li><a href="#">Каталог товаров</a></li>      
                 <li><a href="#">Моноподы для селфи</a></li>      
             </ul>
         </nav>
         <section class="filter">
-            <h2>Фильтр</h2>
+            <div class="first-row">
+                <h2>Фильтр</h2>
+                <h3>Сортировка</h3>
+                <ul class="sort-list default-list">
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По популярности</a></li>
+                </ul>
+                <ul class="sort-nav default-list">
+                    <li><a class="sort-nav sort-nav-top" href="#">Page up</a></li>
+                    <li><a class="sort-nav sort-nav-bottom" href="#">Page down</a></li>
+                </ul>
+            </div>
             <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
                 <div class="cost">
                     <h3>Стоимость</h3>
@@ -57,7 +72,7 @@
                 </div>
                 <div class="colour">
                     <h3>Цвет</h3>
-                    <ul class="colour-list" aria-label="Доступные цвета">
+                    <ul class="colour-list default-list" aria-label="Доступные цвета">
                         <li>
                             <label>
                                 <input type="checkbox" name="colour-black" checked>
@@ -92,7 +107,7 @@
                 </div>
                 <div class="bluetooth">
                     <h3>Bluetooth</h3>
-                    <ul class="bluetooth-list" aria-label="Опция Bluetooth">
+                    <ul class="bluetooth-list default-list" aria-label="Опция Bluetooth">
                         <li>
                             <label>
                                 <input type="radio" name="Bluetooth" checked>
@@ -110,23 +125,12 @@
                 <button type="submit">Показать</button>
             </form>
         </section>
-        <section class="sort">
-            <h3>Сортировка</h3>
-            <ul class="sort-list">
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По популярности</a></li>
-            </ul>
-            <ul class="sort-nav">
-                <li><a class="sort-nav sort-nav-top" href="#">Page up</a></li>
-                <li><a class="sort-nav sort-nav-bottom" href="#">Page down</a></li>
-            </ul>
-        </section>
+        
         <section class="item">
             <div class="item-1">
                 <div class="item-jpg" tabindex="0" aria-label="Карточка товара Любительская селфи-палка">
                     <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                    <ul aria-label="Действия с товаром">
+                    <ul class="default-list" aria-label="Действия с товаром">
                         <li><a href="#">В корзину</a></li>
                         <li><a href="#">Добавить к сравнению</a></li>
                     </ul>
@@ -137,7 +141,7 @@
             <div class="item-2">
                 <div class="item-jpg" tabindex="0" aria-label="Карточка товара Профессиональная селфи-палка">
                     <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                    <ul aria-label="Действия с товаром">
+                    <ul class="default-list" aria-label="Действия с товаром">
                         <li><a href="#">В корзину</a></li>
                         <li><a href="#">Добавить к сравнению</a></li>
                     </ul>
@@ -148,7 +152,7 @@
             <div class="item-3">
                 <div class="item-jpg" tabindex="0" aria-label="Карточка товара Непотопляемая селфи-палка">
                     <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                    <ul aria-label="Действия с товаром">
+                    <ul class="default-list" aria-label="Действия с товаром">
                         <li><a href="#">В корзину</a></li>
                         <li><a href="#">Добавить к сравнению</a></li>
                     </ul>
@@ -159,7 +163,7 @@
             <div class="item-4">
                 <div class="item-jpg" tabindex="0" aria-label="Карточка товара Селфи-палка &quot;Следуй за мной&quot;">
                     <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка &quot;Следуй за мной&quot;">
-                    <ul aria-label="Действия с товаром">
+                    <ul class="default-list" aria-label="Действия с товаром">
                         <li><a href="#">В корзину</a></li>
                         <li><a href="#">Добавить к сравнению</a></li>
                     </ul>
@@ -170,7 +174,7 @@
         </section>
         <section class="pages">
             <h2 class="visually-hidden">Страницы</h2>
-            <ul class="pages-list">
+            <ul class="pages-list default-list">
                 <li><a href="#">Назад</a></li>
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -189,10 +193,15 @@
             <a href="#">Сравнить</a>
             <a href="#">Корзина</a>
         </nav>
-        <ul class="service-and-info">
+        <ul class="service-and-info default-list">
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантии</a></li>
             <li><a href="#">Контакты</a></li>
+        </ul>   
+        <ul class="social-list default-list" aria-label="Наши страницы в социальных сетях.">
+            <li><a href="#"><img src="img/index/ФБ.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="img/index/Instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="img/index/Твитер.png" alt="Twitter"></a></li>
         </ul>   
         <span class="cellphone">Тел.: <a href="tel:84954959595" >+7 (495) 495-95-95</a></span>
         <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
