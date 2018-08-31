@@ -141,9 +141,13 @@ header .primary-link li:active,
 
 		/*основная часть*/
 
-.products span {
+.products .font-gilroy {
 	font-size: 47px;
 	line-height: 56px;
+}
+
+.products .yellow-button {
+	background-size: 220px 8px
 }
 
 .options {
@@ -161,8 +165,22 @@ header .primary-link li:active,
 .popular-list div {
 	width: 160px;
 	height: 160px;
-	background-color: rgba(240, 197, 46, 0.5);
+
+	background-image: url("../img/index/popular-list-back-light.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+.popular-list .img-back:hover {
+	background-image: url("../img/index/popular-list-back.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}		
+
+.popular-list a:active, 
+.popular-list img:active {
+	opacity: 0.3;
+}	
 
 .service {
 	background-color: #e5e5e5;
@@ -201,14 +219,30 @@ header .primary-link li:active,
 	line-height: 40px;
 }
 
-		/*Анимация основной части*/
-.popular-list div:hover {
-	background-color: rgba(240, 197, 46, 1.0);
-}		
+.info .yellow-button,
+.contacts .yellow-button {
+	background-size: 260px 8px;
+}
 
-.popular-list a:active {
+.contacts .yellow-button {
+	opacity: 1.0;
+}
+
+
+
+
+
+		/*Анимация основной части*/
+
+.products .yellow-button:hover {
+	background-size: 220px 40px
+}
+
+.more-info span:active{
 	opacity: 0.3;
-}	
+}
+
+
 
 .color-img:hover {
 	opacity: 1;
@@ -218,7 +252,18 @@ header .primary-link li:active,
 	opacity: 0;
 }
 
+.service .yellow-button:hover {
+	background-size: 160px 40px;
+}
 
+.service .yellow-button:active {
+	background-image: url("../img/catalog/btn-back-black.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 278px 40px;
+
+	color: #f7e184;
+}
 
 
 
@@ -269,6 +314,12 @@ button[name="close"]:active {
 
 		/*Страница каталога*/
 		/*Навигация каталога*/
+
+.font-gilroy-h1{
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;	
+	font-weight: 47px;
+	line-height: 48px;
+}
 
 .catalog-nav-list li {
 	opacity: 0.3;
@@ -445,6 +496,16 @@ button[name="close"]:active {
 	opacity: 1;
 }
 
+.yellow-button {
+	background-image: url("../img/catalog/btn-back-small.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+
+
+
 		/*Анимация фильтра*/
 
 .sort-order li:hover {
@@ -597,7 +658,7 @@ footer {
 	color: #fff;
 }
 
-footer .site-name {
+footer .name-site {
 	color: #ffc600;
 	font-size: 48px;
 }
@@ -620,11 +681,11 @@ footer .site-name {
 
 		/*Анимация подвала*/
 
-footer .site-name:hover {
+footer .name-site:hover {
 	opacity: 0.6;
 }
 
-footer .site-name:active{
+footer .name-site:active{
 	opacity: 0.3;
 }
 
