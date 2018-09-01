@@ -98,9 +98,9 @@ input[type="search"] {
 
 header .name-site:hover,
 header input[type="search"]:hover,
-header .primary-link li:hover,
-header .catalog-list li:hover,
-header .catalog-title:hover,
+.primary-link li:hover,
+.catalog-list li:hover,
+.catalog-title:hover,
 .service-and-info li:hover {
 	opacity: 0.6;
 }
@@ -146,7 +146,7 @@ header .primary-link li:active,
 	line-height: 56px;
 }
 
-.products .yellow-button {
+.products .stylized-a {
 	background-size: 220px 8px
 }
 
@@ -166,13 +166,13 @@ header .primary-link li:active,
 	width: 160px;
 	height: 160px;
 
-	background-image: url("../img/index/popular-list-back-light.png");
+	background-image: url("../img/main/popular-list-back-light.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .popular-list .img-back:hover {
-	background-image: url("../img/index/popular-list-back.png");
+	background-image: url("../img/main/popular-list-back.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }		
@@ -219,12 +219,12 @@ header .primary-link li:active,
 	line-height: 40px;
 }
 
-.info .yellow-button,
-.contacts .yellow-button {
+.info .stylized-a,
+.contacts .stylized-a {
 	background-size: 260px 8px;
 }
 
-.contacts .yellow-button {
+.contacts .stylized-a {
 	opacity: 1.0;
 }
 
@@ -234,7 +234,7 @@ header .primary-link li:active,
 
 		/*Анимация основной части*/
 
-.products .yellow-button:hover {
+.products .stylized-a:hover {
 	background-size: 220px 40px
 }
 
@@ -252,11 +252,11 @@ header .primary-link li:active,
 	opacity: 0;
 }
 
-.service .yellow-button:hover {
+.service .stylized-a:hover {
 	background-size: 160px 40px;
 }
 
-.service .yellow-button:active {
+.service .stylized-a:active {
 	background-image: url("../img/catalog/btn-back-black.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -496,7 +496,7 @@ button[name="close"]:active {
 	opacity: 1;
 }
 
-.yellow-button {
+.stylized-a {
 	background-image: url("../img/catalog/btn-back-small.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -568,7 +568,7 @@ input[type="radio"]:checked:disabled + label::before {
 }
 		/*Товары*/
 
-.item span {
+.price {
 	font-family: "Gilroy Light", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -605,6 +605,14 @@ input[type="radio"]:checked:disabled + label::before {
 .item-card img:hover + .action,
 .action:hover {
 	visibility: visible;
+}
+
+.item .stylized-a:hover {
+	background-size: 220px 40px;
+}
+
+.stylized-a span:active{
+	opacity: 0.3;
 }
 
 .add:hover {
