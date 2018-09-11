@@ -1709,6 +1709,10 @@ footer {
 	width: 400px;
 }
 
+.footer-catalog .primary-link-footer {
+	width: 452px;
+}
+
 .primary-link-footer a {
 	position: relative;
 }
@@ -1743,7 +1747,7 @@ footer {
 	height: 10px;
 
 	position: absolute;
-	top: 5px;
+	top: 6px;
 	left: -25px;
 
 	background-image: url("../img/main/compare.png");
@@ -1757,7 +1761,7 @@ footer {
 	height: 12px;
 
 	position: absolute;
-	top: 3px;
+	top: 4px;
 	left: -25px;
 
 	background-image: url("../img/main/cart.png");
