@@ -20,9 +20,6 @@ body {
 	padding: 0;
 	margin: 0 auto;
 
-
-	width: 1440px;
-
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
@@ -121,15 +118,14 @@ a {
 
 	display: flex;
 	flex-wrap: wrap;
-
+	justify-content: space-between;
 }
 
 .form-search {
 	position: relative;
 
-	margin-right: 126px;
 	margin-bottom: 20px;
-
+outline: 1px solid red;
 	width: 440px;
 	padding: 8.5px 0;
 }
@@ -181,12 +177,12 @@ input[type="search"] {
 
 .primary-link {
 	display: flex;
+	justify-content: space-between;
 }
 
 .primary-link .login {
-	width: 200px;
-	margin-right: 80px;
-
+	width: 290px;
+	outline: 1px solid red;
 	display: block;
 	position: relative;
 
@@ -211,9 +207,8 @@ header .login::before {
 }
 
 .primary-link .compare {
-	width: 93px;
-
-	margin-right: 40px;
+	width: 123px;
+	outline: 1px solid red;
 
 	display: block;
 	position: relative;
@@ -236,7 +231,7 @@ header .compare::before {
 .primary-link .basket-nav {
 	margin: 0;
 	padding: 0;
-
+	outline: 1px solid red;
 	position: relative;
 }
 
@@ -654,17 +649,19 @@ main {
 	margin-bottom: 38px;
 }
 
+.service {
+	background-image: 
+		linear-gradient(to bottom, #fff 100px, #e5e5e5 100px);
+}
+
 .service .wrapper {
-	width: 1440px;
+	width: 1200px;
 
 	margin-bottom: 94px;
 	padding-top: 75px;
 
-	background-image: 
-		linear-gradient(to bottom, #fff 100px, #e5e5e5 100px);
-
 	display: flex;
-	flex-direction: row;
+	justify-content: space-around;
 }
 
 .service h2 {
@@ -672,11 +669,15 @@ main {
 	line-height: 48px;
 	margin: 0;
 	padding: 0;
+
 	margin-bottom: 43px;
 }
 
 .service p {
 	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	line-height: 30px;
+	font-size: 15px;
 	color: #464646;
 
 	margin: 0;
@@ -684,14 +685,13 @@ main {
 
 	display: block;
 
-	width: 510px;
+	width: 425px;
 }
 
 
 
 .service-list {
-	margin-left: 140px;
-
+	width: 305px;
 	position: relative;
 }
 
@@ -726,14 +726,12 @@ main {
 }
 
 .service .right-column {
-	margin-left: 117px;
+	width: 840px;
 }
 
 .delivery,
 .warranty,
-.credit {
-	width: 694px;
-	
+.credit {	
 	position: relative;
 
 	padding-bottom: 80px;
@@ -748,7 +746,7 @@ main {
 
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 140px;
 
 	background-image: url("../img/main/delivery.png");
 	background-repeat: no-repeat;
@@ -762,7 +760,7 @@ main {
 
 	position: absolute;
 	top: 0;
-	right: -24px;
+	right: 120px;
 
 	background-image: url("../img/main/warranty.png");
 	background-repeat: no-repeat;
@@ -776,11 +774,12 @@ main {
 
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 140px;
 
 	background-image: url("../img/main/credit.png");
 	background-repeat: no-repeat;
 }
+
 .brands-logo {
 	margin-bottom: 93px;
 }
@@ -812,17 +811,17 @@ main {
 
 .info-contacts {
 	width: 1160px;
-
+outline: 1px solid red;
 	display: flex;	
+	justify-content: space-between;
 
 	margin-bottom: 94px;
 }
 
 .info {
 	width: 475px;
-
+outline: 1px solid red;
 	padding-top: 60px;
-	margin-right: 135px;
 	position: relative;
 }
 
@@ -887,7 +886,7 @@ main {
 
 .contacts {
 	width: 550px;
-
+outline: 1px solid red;
 	padding-top: 58px;
 
 	position: relative;
@@ -1036,6 +1035,15 @@ button[name="close"] {
 	position: absolute;
 	top: 22px;
 	right: 22px;
+
+	display: block;
+	width: 55px;
+	height: 55px;
+
+	background-image: url("../img/main/modal-close.png");
+	background-repeat: no-repeat;
+
+	z-index: 5;
 }
 
 button[name="close"]:hover {
@@ -1064,21 +1072,21 @@ button[name="close"]:active {
 
 .header-catalog {
 	margin-bottom: 44px;
+	outline: 1px solid red;
 }
 
 .header-catalog .login {
-	margin-right: 17px;
-
-	width: 134px;
+	outline: 1px solid red;
+	width: 155px;
 }
 
 .header-catalog .login-exit {
-	margin-right: 81px;
+	width: 135px;
+
+	display: block;
+	outline: 1px solid red;
 }
 
-.header-catalog .catalog-list {
-	background-color:  #f7e296;
-}
 		/*Навигация каталога*/
 
 .wrapper-nav {
@@ -1141,26 +1149,28 @@ button[name="close"]:active {
 }
 
 		/*Фильтр*/
-.catalog-main {
-	margin: 0 auto;
-}
 
-.catalog-main .wrapper {
+.catalog-main > .wrapper {
 	display: flex;
-	flex-wrap: wrap;
-	width: 1440px;
+
+	width: 1200px;
+
+	margin: 0 auto;
 }
 
 .catalog-main .second-column {
 	display: flex;
 	flex-direction: column;
 
-	width: 972px;
-
+	width: 852px;
 }
 
 .filter {
-	width: 468px;
+	outline: 1px solid red;
+	background-image: 
+		linear-gradient(to bottom, #dcdcdc 70px, #eeeeee 70px);
+
+	width: 348px;
 }
 
 .filter .filter-title {
@@ -1168,24 +1178,22 @@ button[name="close"]:active {
 
 	display: block;
 
-	width: 490px;
+	width: 310px;
+	outline: 1px solid red;
 
-	text-align: center;
+	padding-left: 80px;
+
 	line-height: 70px;
 
-	background-color: #dbdbdb;
 }
 
 .form-filter {
-	width: 468px;
+	width: 348px;
 	min-height: 1287px;
-
+	outline: 1px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-
-	background-color: #efefef;
-
 }
 
 .form-filter h3 {
@@ -1380,12 +1388,13 @@ button[name="close"]:active {
 }
 
 .sort {
-	width: 972px;
+	width: 865px;
 	line-height: 70px;
 
 	background-color: #ebebeb;
+outline: 1px solid red;
 
-	display: inline-flex;
+	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 
@@ -1393,8 +1402,10 @@ button[name="close"]:active {
 }
 
 .sort h3 {
+	display: block;
+	outline: 1px solid red;
 	margin-left: 72px;
-	margin-right: 56px;
+	margin-right: 52px;
 }
 
 ul[class^="sort"] {
@@ -1407,8 +1418,8 @@ ul[class^="sort"] {
 	width: 285px;
 	display: flex;
 	justify-content: space-between;
-
-	margin-right: 210px; 
+outline: 1px solid red;
+	margin-right: 210px;
 }
 
 .sort-order li {
@@ -1423,6 +1434,7 @@ ul[class^="sort"] {
 
 .sort-nav {
 	width: 40px;
+outline: 1px solid red;
 
 	display: flex;
 	justify-content: space-between;
@@ -1617,13 +1629,17 @@ div[class^="item-"] {
 	background-color: #ebebeb;
 
 	display: flex;
+	justify-content: space-between;
 }
-
-.page-number {
+.page-numbers {
+	width: 86px;
+	display: flex;
+	justify-content: space-between;
+}
+.page-numbers li {
 	opacity: 0.2;
-
-	padding-top: 27px;
-	margin-right: 30px;
+outline: 1px solid red;
+	line-height: 75px;
 }
 
 .back, .next {
@@ -1631,16 +1647,7 @@ div[class^="item-"] {
 
 	text-align: center;
 	
-	padding-top: 27px;
-	padding-bottom: 26px;
-}
-
-.back {
-	margin-right: 200px;
-}
-
-.next {
-	margin-left: 180px;
+	line-height: 75px;
 }
 
 		/*Анимация страниц*/
@@ -1655,9 +1662,18 @@ div[class^="item-"] {
 	opacity: 0.3;
 }
 		
+.page-numbers li:hover {
+	opacity: 0.6;
+}
+
+.page-numbers li:active {
+	opacity: 1;
+}
+
 .active,
 .sort-order .active,
-.sort-nav .active {
+.sort-nav .active,
+.page-numbers .active {
 	opacity: 1.0;
 }
 
@@ -1678,21 +1694,6 @@ footer {
 	width: 1160px;
 
 	position: relative;
-}
-
-.footer-nav address::after {
-	content: "";
-
-	display: block;
-
-	width: 80px;
-	height: 1px;
-
-	position: absolute;
-	bottom: 85px;
-	left: 0;
-
-	border-bottom: 7px solid #ffc600; 
 }
 
 .row{
@@ -1768,28 +1769,37 @@ footer {
 	background-repeat: no-repeat;
 }
 
-footer address {
-	display: block;
-
-	width: 260px;
-
-	margin-right: -90px;
-}
-
-footer .service-and-info {
-	width: 430px;
-	display: flex;
-	justify-content: space-between;
-
+footer .row:nth-of-type(2) {
 	margin-bottom: 70px;
 }
 
-footer .row:last-child {
-	width: 650px;
-	margin-left: 512px;
+footer address {
+	display: block;
+
+	width: 360px;
+}
+
+footer .service-and-info {
+	width: 440px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cellphone {
+	width: 360px;
+	text-align: right;
+}
+
+.spacer {
+	width: 80px;
+	align-self: center;
+
+	border-bottom: 7px solid #ffc600; 
 }
 
 .social-list {
+	margin-left: -50px;
+
 	width: 140px;
 
 	display: flex;
@@ -1819,7 +1829,6 @@ footer .name-site {
 	font-size: 48px;
 
 	margin-bottom: 40px;
-	margin-right: 544px;
 }
 
 .producer {
