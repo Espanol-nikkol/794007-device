@@ -32,19 +32,25 @@
             		</ul>
                     <a class="catalog-title" href="#" aria-label=""><h2 class="font-gilroy-a uppercase">Каталог товаров</h2></a>
                     <ul class="catalog-list default-list" aria-label="Каталог товаров">
-                        <ul class="column-1 default-list">
-                            <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-                            <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-                            <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-                        </ul>
-                        <ul class="column-2 default-list">
-                            <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-                            <li class="catalog-item"><a href="#">Умные часы</a></li>
-                        </ul>
-                        <ul class="column-3 default-list">
-                            <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
-                        </ul>
-                    </ul>                     
+                        <li>
+                            <ul class="column-1 default-list">
+                                <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+                                <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+                                <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+                            </ul>
+                        </li>
+                        <li>    
+                            <ul class="column-2 default-list">
+                                <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+                                <li class="catalog-item"><a href="#">Умные часы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="column-3 default-list">
+                                <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+                            </ul>
+                        </li>
+                    </ul>                       
                 </div>
             </nav>	
         </div>
@@ -288,14 +294,14 @@
                     <label class="font-gilroy" for="name">
                         Ваше имя:
                     </label>
-                    <input class="button" type="text" name="name" id="name" placeholder="Имя Фамилия" maxlength="50" required rows="10" cols="110" pattern="[А-9] [А-9]">
+                    <input class="button" type="text" name="name" id="name" placeholder="Имя Фамилия" maxlength="50" required pattern="[A-Z,0-9] [A-Z,0-9]">
                     
                 </div>
                 <div class="column">
                     <label class="font-gilroy" for="e-mail">
                         Ваш e-mail:
                     </label>
-                    <input class="button" type="text" name="e-mail" id="e-mail" placeholder="email@example.com" maxlength="35" required pattern="[A-9]@[A-9].[A-9]" required>
+                    <input class="button" type="text" name="e-mail" id="e-mail" placeholder="email@example.com" maxlength="35" pattern="[A-Z,0-9]@[A-Z,0-9].[A-Z,0-9]" required>
                 </div>    
                 <label class="font-gilroy" for="letter">
                         Текст письма:
