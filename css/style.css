@@ -1107,6 +1107,8 @@ main {
 textarea[name="letter"] {
 	padding-left: 20px;
 	padding-top: 19px;
+
+	background-color: #f2f2f2;
 }
 
 .form-write-us input {
