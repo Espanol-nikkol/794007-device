@@ -1296,6 +1296,8 @@ button[name="close"]:active {
 .filter-title {
 	width: 265px;
 
+	background-color: #dbdbdb;
+
 	line-height: 70px;
 
 	margin: 0;
@@ -1307,6 +1309,8 @@ button[name="close"]:active {
 
 .sort {
 	width: 785px;
+
+	background-color: #ebebeb;
 
 	padding-top: 4.5px;
 	padding-bottom: 6px;
@@ -1427,20 +1431,15 @@ ul[class^="sort"] {
 
 .form-filter {
 	width: 265px;
-	min-height: 1287px;
+
+	background-color: #efefef;
 
 	display: -webkit-box;
 
 	display: -ms-flexbox;
 
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	flex-wrap: wrap;
 }
 
 .form-filter h3 {
@@ -1844,6 +1843,7 @@ div[class^="item-"] {
 	position: relative;
 
 	margin-left: 80px;
+	margin-bottom: 80px;
 }
 
 .pages-list	{
