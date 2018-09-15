@@ -1659,10 +1659,8 @@ ul[class^="sort"] {
 	opacity: 1;
 }
 
-.form-filter .blin {
-	color: red;
+.form-filter .button {
 	width: 200px;
-	display: block;
 
 	transition: all .2s ease-in-out;
 
