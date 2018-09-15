@@ -1290,21 +1290,14 @@ button[name="close"]:active {
 }
 
 .wrapper-2 {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-preferred-size: 70px;
-	    flex-basis: 70px;
+	background-image: 
+		linear-gradient(to right, #dbdbdb 0%, #dbdbdb 29%, #ebebeb 29%, #ebebeb 100%);
 }
 
-.wrapper-filter {
-	background-color: #dcdcdc;
+.wrapper-3 {
+	display: flex;
+
+	width: 1200px;
 }
 
 .filter-title {
@@ -1319,13 +1312,6 @@ button[name="close"]:active {
 	padding-bottom: 2px;
 }
 
-.wrapper-sort {
-	background-color: #ebebeb;
-
-	padding: 0;
-	margin: 0;
-}
-
 .sort {
 	width: 805px;
 
@@ -1333,8 +1319,6 @@ button[name="close"]:active {
 	padding-bottom: 6px;
 
 	line-height: 70px;
-
-	background-color: #ebebeb;
 
 	display: -webkit-box;
 
@@ -1417,6 +1401,10 @@ ul[class^="sort"] {
 	background-image: url("../img/catalog/icon-down-dir.png")
 }
 
+.wrapper-up-main {
+	background-image: 
+			linear-gradient(to right, #efefef 0%, #efefef 29%, #fff 29%, #fff 100%);
+}
 
 .wrapper-main {
 	width: 1200px;
@@ -1441,7 +1429,6 @@ ul[class^="sort"] {
 }
 
 .filter {
-	background-color: #efefef;
 
 	display: flex;
 }
