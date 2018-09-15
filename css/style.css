@@ -173,7 +173,7 @@ input[type="search"] {
 .button-search {
 	width: 85px;
 	
-	padding: 15px 0;
+	padding: 15.5px 0;
 
 	opacity: 0.4;
 	vertical-align: middle;
@@ -395,6 +395,7 @@ input[type="search"]:focus+.button {
 .button-search:active{
 	color: #6a6a6a;
 	opacity: 1.0;
+	border: 1px solid #000;
 }
 
 header .name-site:active,
