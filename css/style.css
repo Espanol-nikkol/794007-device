@@ -87,7 +87,14 @@ a {
 	background-position: center;
 
 	transition: all .2s ease-in-out;
+
+	line-height: 40px;
 }
+
+.stylized-a:hover {
+	background-size: 200px 40px;
+}
+
 
 .positioner {
 	margin: 0 auto;
@@ -987,13 +994,15 @@ main {
 	background-size: 260px 8px;
 	background-position: 0%	 50%;
 
-	vertical-align: middle;
-
 	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 
+.info .stylized-a:hover,
+.contacts .stylized-a:hover {
+	background-size: 260px 40px;
+}
 .contacts .stylized-a {
 	opacity: 1.0;
 }
@@ -1650,8 +1659,14 @@ ul[class^="sort"] {
 	opacity: 1;
 }
 
-.form-filter .stylized-a {
+.form-filter .blin {
+	color: red;
 	width: 200px;
+	display: block;
+
+	transition: all .2s ease-in-out;
+
+	line-height: 40px;
 }
 
 
@@ -1792,7 +1807,24 @@ div[class^="item-"] {
 .action {
 	position: absolute;
 	top: 182px;
-	left: 116px;
+	left: 79px;
+
+	width: 200px;
+}
+
+.action li {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.action .to-basket {
+	display: block;
+
+	width: 200px;
+
+	transition: all .2s ease-in-out;
+
+	line-height: 40px;		
 }
 
 .add {
