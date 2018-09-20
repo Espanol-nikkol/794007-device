@@ -86,7 +86,8 @@ a {
 	line-height: 40px;
 
 	position: relative;
-outline: 1px solid purple;
+
+
 
 }
 
@@ -98,7 +99,8 @@ outline: 1px solid purple;
 	position: absolute;
 	top: 16px;
 	left: 0;
-outline: 1px solid red;
+
+
 	width: 220px;
 	height: 8px;
 
@@ -763,7 +765,8 @@ main {
 
 .service .wrapper {
 	width: 1200px;
-outline: 1px solid green;
+
+
 	margin-bottom: 94px;
 
 	display: flex;
@@ -799,7 +802,8 @@ outline: 1px solid green;
 .service-list {
 	width: 	305px;
 	position: relative;
-	outline: 1px solid brown;
+	
+
 	padding-top: 6px;
 }
 
@@ -873,7 +877,8 @@ outline: 1px solid green;
 
 .service .right-column {
 	width: 780px;
-	outline: 1px solid red;
+	
+
 }
 
 .delivery,
@@ -1038,7 +1043,8 @@ outline: 1px solid green;
 	position: absolute;
 	top: 16px;
 	left: 0;
-outline: 1px solid red;
+
+
 	width: 260px;
 	height: 8px;
 
@@ -1694,7 +1700,8 @@ ul[class^="sort"] {
 	line-height: 40px;
 
 	position: relative;
-outline: 1px solid purple;
+
+
 	
 	z-index: 1;
 }
@@ -1707,7 +1714,8 @@ outline: 1px solid purple;
 	position: absolute;
 	top: 16px;
 	left: 0;
-outline: 1px solid red;
+
+
 	width: 200px;
 	height: 8px;
 
@@ -1878,7 +1886,8 @@ div[class^="item-"] {
 	line-height: 40px;
 
 	position: relative;
-outline: 1px solid purple;
+
+
 	
 	z-index: 1;
 }
@@ -1891,7 +1900,8 @@ outline: 1px solid purple;
 	position: absolute;
 	top: 16px;
 	left: 0;
-outline: 1px solid red;
+
+
 	width: 200px;
 	height: 8px;
 
