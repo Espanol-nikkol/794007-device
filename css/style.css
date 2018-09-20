@@ -1874,7 +1874,6 @@ div[class^="item-"] {
 	display: block;
 
 	transition: all .2s ease-in-out;
-	transition-property: background-color, width, color;
 
 	line-height: 40px;
 
