@@ -117,6 +117,10 @@ a {
 	background-color: #f0c52e;
 	z-index: -1;
 
+	-webkit-transition: all .2s ease-in-out;
+
+	-o-transition: all .2s ease-in-out;
+
 	transition: all .2s ease-in-out;
 }
 
@@ -175,7 +179,8 @@ a {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	align-content: flex-start;
+	-ms-flex-line-pack: start;
+	    align-content: flex-start;
 }
 
 .form-search {
@@ -796,7 +801,8 @@ main {
 }
 
 .img-back-2 img {
-	align-self: flex-end;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
 }
 
 .service {
@@ -814,8 +820,14 @@ main {
 
 	margin-bottom: 75px;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .service h2 {
@@ -1105,6 +1117,10 @@ outline: 1px solid red;
 
 	background-color: #f0c52e;
 	z-index: -1;
+
+	-webkit-transition: all .2s ease-in-out;
+
+	-o-transition: all .2s ease-in-out;
 
 	transition: all .2s ease-in-out;
 }
@@ -1418,15 +1434,25 @@ button[name="close"]:active {
 
 .wrapper-1 {
 	background-image: 
+		-webkit-gradient(linear, left top, right top, from(#dbdbdb), color-stop(29%, #dbdbdb), color-stop(29%, #ebebeb), to(#ebebeb));
+	background-image: 
+		-webkit-linear-gradient(left, #dbdbdb 0%, #dbdbdb 29%, #ebebeb 29%, #ebebeb 100%);
+	background-image: 
+		-o-linear-gradient(left, #dbdbdb 0%, #dbdbdb 29%, #ebebeb 29%, #ebebeb 100%);
+	background-image: 
 		linear-gradient(to right, #dbdbdb 0%, #dbdbdb 29%, #ebebeb 29%, #ebebeb 100%);
 }
 
 .wrapper-2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 
 	width: 1200px;
 	margin: 0 auto;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .filter-title {
@@ -1540,15 +1566,28 @@ ul[class^="sort"] {
 
 .wrapper-up-main {
 	background-image: 
+			-webkit-gradient(linear, left top, right top, from(#efefef), color-stop(29%, #efefef), color-stop(29%, #fff), to(#fff));
+	background-image: 
+			-webkit-linear-gradient(left, #efefef 0%, #efefef 29%, #fff 29%, #fff 100%);
+	background-image: 
+			-o-linear-gradient(left, #efefef 0%, #efefef 29%, #fff 29%, #fff 100%);
+	background-image: 
 			linear-gradient(to right, #efefef 0%, #efefef 29%, #fff 29%, #fff 100%);
 }
 
 .wrapper-main {
 	width: 1200px;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 
 	margin: 0 auto;
 }
@@ -1566,6 +1605,8 @@ ul[class^="sort"] {
 }
 
 .filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -1581,7 +1622,8 @@ ul[class^="sort"] {
 	display: -ms-flexbox;
 
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .form-filter h3 {
@@ -1795,6 +1837,10 @@ ul[class^="sort"] {
 .form-filter .stylized-a {
 	width: 200px;
 
+	-webkit-transition: all .2s ease-in-out;
+
+	-o-transition: all .2s ease-in-out;
+
 	transition: all .2s ease-in-out;
 
 	line-height: 40px;
@@ -1820,6 +1866,10 @@ ul[class^="sort"] {
 	height: 8px;
 
 	background-color: #f0c52e;
+
+	-webkit-transition: all .2s ease-in-out;
+
+	-o-transition: all .2s ease-in-out;
 
 	transition: all .2s ease-in-out;
 }
@@ -2009,6 +2059,10 @@ div[class^="item-"] {
 	width: 200px;
 	display: block;
 
+	-webkit-transition: all .2s ease-in-out;
+
+	-o-transition: all .2s ease-in-out;
+
 	transition: all .2s ease-in-out;
 
 	line-height: 40px;
@@ -2034,6 +2088,10 @@ div[class^="item-"] {
 	height: 8px;
 
 	background-color: #f0c52e;
+
+	-webkit-transition: all .2s ease-in-out;
+
+	-o-transition: all .2s ease-in-out;
 
 	transition: all .2s ease-in-out;
 }
@@ -2320,7 +2378,11 @@ footer .service-and-info {
 .spacer {
 	width: 80px;
 
-	align-self: center;
+	-ms-flex-item-align: center;
+
+	    -ms-grid-row-align: center;
+
+	    align-self: center;
 
 	border-bottom: 7px solid #ffc600; 
 }
