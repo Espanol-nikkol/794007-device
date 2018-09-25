@@ -149,12 +149,12 @@ a {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-ms-flex-line-pack: start;
-	align-content: flex-start;
+	    align-content: flex-start;
 }
 
 .form-search {
@@ -162,6 +162,7 @@ a {
 	margin-bottom: 20px;
 	width: 400px;
 	padding: 8.5px 0;
+	background-color: transparent;
 }
 
 input[type="search"] {
@@ -173,7 +174,16 @@ input[type="search"] {
 	font: inherit;
 	opacity: 0.3;
 	border: none;
-	background-color: inherit;
+	background-color: transparent;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.form-search {
+		margin-left: -165px;
+	}
+	input[type="search"] {
+		width: 360px;
+	}
 }
 
 .form-search::before {
@@ -207,10 +217,6 @@ input[type="search"] {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-top: 12px;
-}
-
-.primary-link li {
-	outline: 1px solid purple;
 }
 
 .primary-link .login {
@@ -460,7 +466,6 @@ ul[class^="column-"] li:active,
 	margin: 0;
 	margin-top: 80px;
 	margin-bottom: 19px;
-	outline: 1px solid red;
 }
 
 .slide-1::after {
@@ -506,7 +511,6 @@ ul[class^="column-"] li:active,
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding-top: 14px;
-	outline: 1px solid red;
 }
 
 .empty-slide {
@@ -665,7 +669,8 @@ ul[class^="column-"] li:active,
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .popular-list li {
@@ -803,7 +808,6 @@ ul[class^="column-"] li:active,
 .credit {
 	position: relative;
 	padding-bottom: 49px;
-	outline: 1px solid red;
 }
 
 .delivery p {
@@ -856,7 +860,8 @@ ul[class^="column-"] li:active,
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .brands-list li {
@@ -889,7 +894,6 @@ ul[class^="column-"] li:active,
 
 .info {
 	width: 475px;
-	outline: 1px solid red;
 	padding-top: 60px;
 	position: relative;
 }
@@ -960,7 +964,6 @@ ul[class^="column-"] li:active,
 
 .contacts {
 	width: 560px;
-	outline: 1px solid red;
 	padding-top: 58px;
 	position: relative;
 }
@@ -1166,7 +1169,6 @@ button[name="close"]:active {
 	position: absolute;
 	top: 65px;
 	left: -60px;
-	outline: 1px solid red;
 	width: 1100px;
 	height: 137px;
 	padding: 0;
@@ -1278,7 +1280,6 @@ button[name="close"]:active {
 	background-color: #dbdbdb;
 	line-height: 70px;
 	font-size: 16px;
-	outline: 1px solid red;
 	margin: 0;
 	padding: 0;
 	padding-bottom: 0;
@@ -1740,11 +1741,6 @@ div[class^="item-"] {
 	position: relative;
 	background-color: #efefef;
 	margin-bottom: 32px;
-	outline: 1px solid purple;
-}
-
-.item h3 {
-	outline: 1px solid red;
 }
 
 .item-1 .card-item {
@@ -1971,7 +1967,9 @@ footer {
 	width: 1160px;
 	position: relative;
 	flex-wrap: wrap;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 .row {
@@ -1981,7 +1979,8 @@ footer {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 1160px;
 }
 
@@ -1992,14 +1991,10 @@ footer {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 298px;
-	outline: 1px solid red;
 	margin-top: 5px;
-}
-
-.primary-link-footer li {
-	outline: 1px solid red;
 }
 
 .primary-link-footer-catalog {
@@ -2007,7 +2002,6 @@ footer {
 	padding: 0;
 	margin: 0;
 	margin-top: -2px;
-		outline: 1px solid red;
 }
 
 .primary-link-footer a {
@@ -2112,13 +2106,9 @@ footer .service-and-info {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	flex-wrap: wrap;
-outline: 1px solid red;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 2px;
-}
-
-footer .service-and-info li {
-	outline: 1px solid red;
 }
 
 .cellphone {
@@ -2128,8 +2118,9 @@ footer .service-and-info li {
 
 
 footer .row:last-child {
-	outline: 1px solid yellow;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	width: 660px;
 
@@ -2141,9 +2132,10 @@ footer .row:last-child {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	outline: 1px solid purple;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-top: 2px;
 }
 
@@ -2153,7 +2145,6 @@ footer .row:last-child {
 	top: 15px;
 	left: -500px;
 	display: block;
-	outline: 1px solid red;
 	width: 80px;
 	-ms-flex-item-align: center;
 	-ms-grid-row-align: center;
